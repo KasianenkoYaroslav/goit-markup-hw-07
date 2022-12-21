@@ -9,9 +9,8 @@
 }
 .list-team{
     text-decoration: none;
-    display: flex;
+    @extend %flex-align;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -55,9 +54,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
-    align-items: center;
     gap: 10px;
 }
 .workers-soc-items{
@@ -67,9 +65,8 @@
 .workers-soc-link{
     width: 100%;
     height: 100%;
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
-    align-items: center;
     border-radius: 50%;
     transition: background-color 250ms linear, fill 250ms linear;
     &:hover{

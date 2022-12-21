@@ -13,8 +13,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     justify-content: center;
     gap: 30px; 
 }
@@ -24,8 +23,7 @@
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     justify-content: center;
 }
 .advantage-icon{
@@ -39,9 +37,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-bottom: 10px;
-    display: flex;
+    @extend %flex-align;
     justify-content: space-between;
-    align-items: center;
     color:var(--article-color)
 }
 .advantages-descr{

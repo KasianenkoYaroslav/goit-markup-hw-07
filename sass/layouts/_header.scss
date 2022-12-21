@@ -1,8 +1,7 @@
 .container-header{
     width: 1200px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
 }
 .header-border-bottom{
     border-bottom: 1px solid #ECECEC;
@@ -12,8 +11,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     gap: 50px;
 }
 .logo{
@@ -28,17 +26,14 @@
     font-family: 'Raleway';
     padding-top: 24px;
     padding-bottom: 25px;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
 }
 .logo-header{
     color: #000000;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
 }
 .navigation{
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     transition: color 250ms linear;
 }
 .list-menu{
@@ -46,8 +41,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     gap: 50px;
     margin-left: 93px;
     transition: color 250ms linear;
@@ -61,8 +55,7 @@
     font-weight: 500;
     padding-top: 32px;
     padding-bottom: 32px;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     transition: color 250ms linear;
     position: relative;
     &.active::after{
@@ -91,8 +84,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     margin-left: auto;
 }
 .header-contacts-link{
@@ -106,8 +98,7 @@
     font-weight: 500;
     padding-top: 32px;
     padding-bottom: 32px;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     justify-content: center;
     margin-left: auto;
     margin-right: 30px;

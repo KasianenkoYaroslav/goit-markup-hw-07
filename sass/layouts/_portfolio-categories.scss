@@ -3,16 +3,14 @@
     margin: 0 auto; 
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
 }
 .list-portfolio-categories{
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     justify-content: center;
     margin-bottom: 50px;
     gap: 8px;
