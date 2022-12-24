@@ -16,11 +16,8 @@
 .clients{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    @include font(700, 36, 42px, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121; 
     margin-bottom: 50px;
 }
@@ -41,7 +38,6 @@
     }
 }
 .clients-icons{
-    width: 106px;
-    height: 60px;
+    @include size(106, 60);
     margin: 16px 32px 16px 32px;
 }

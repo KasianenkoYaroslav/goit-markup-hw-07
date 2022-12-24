@@ -18,8 +18,7 @@
     gap: 30px; 
 }
 .advantage-bcgrd{
-    width: 270px;
-    height: 120px;
+    @include size(270, 120);
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -27,14 +26,10 @@
     justify-content: center;
 }
 .advantage-icon{
-    width: 70px;
-    height: 70px;
+    @include size(70, 70);
 }
 .advantages{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14, 1.14, 0.03);
     text-transform: uppercase;
     padding-bottom: 10px;
     @extend %flex-align;
@@ -42,12 +37,8 @@
     color:var(--article-color)
 }
 .advantages-descr{
-    font-size: 14px;
-    width: 270px;
-    height: 48px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(400, 14, 1.71, 0.03); 
+    @include size(270, 48);
     display: flex;
     justify-content: space-between;
     color: var(--article-descr-color)

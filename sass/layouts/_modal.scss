@@ -23,8 +23,7 @@
     transition: transform 250ms linear;
 }
 .modal-close{
-    width: 30px;
-    height: 30px;
+    @include size(30, 30);
     background-color: transparent;
     border-radius: 50%;
     cursor: pointer;
@@ -56,11 +55,8 @@
 .modal-heading{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
+    @include font(700, 20, 23px, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
     padding-bottom: 12px;
 }
@@ -74,10 +70,7 @@
 .field-type{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include font(400, 12, 14px, 0.01);
     color: #757575;
 }
 .modal-input{
@@ -108,22 +101,17 @@
 }
 .modal-form-icons{
     position: absolute;
-    width: 15px;
-    height: 12px;
+    @include size(15, 12);
     left: 10px;
     top: 55%;
     transition: color 250ms linear, fill 250ms linear;
 }
 .textarea-label{
     display: block;
-    width: 448px;
-    height: 120px;
+    @include size(448, 120);
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include font(400, 12, 14px, 0.01);
     padding: 12px 16px;
     margin-top: 4px;
     outline: none;
@@ -162,8 +150,7 @@
     background-color: var(--btns-links-color);
 } */
 .modal-politic-check2{
-    width: 16px;
-    height: 16px;
+    @include size(16, 16);
     border: 2px solid;
     border-radius: 2px;
     margin-right: 10px;
@@ -171,8 +158,7 @@
     cursor: pointer; 
 }
 .modal-form-icon-check{
-    width: 15px;
-    height: 12px;
+    @include size(15, 12);
     top: 55%;
     transition: color 250ms linear, fill 250ms linear;
     &:checked + label>div{
@@ -189,10 +175,7 @@
 .check-text{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
+    @include font(400, 14, 24px, 0.02);
     color: #757575;
 }
 .a-modal {
@@ -212,10 +195,7 @@
 }
 .btn-submit{
     font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
+    @include font(700, 16, 30px, 0.06);
     padding: 10px 52px 10px 52px;
     align-items: center;
     text-align: center;

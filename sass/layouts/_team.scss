@@ -23,29 +23,20 @@
     border-radius: 0px 0px 4px 4px;
 }
 .team{
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
+    @include font(700, 36, 1.16, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 50px;
 }
 .name{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.1875;
+    @include font(500, 16, 1.1875, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
     padding-bottom: 10px;
     color: var(--article-color)
 }
 .position{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.1875;
+    @include font(400, 16, 1.1875, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 16px;
     color: var(--article-descr-color)
 }
@@ -59,8 +50,7 @@
     gap: 10px;
 }
 .workers-soc-items{
-    width: 44px;
-    height: 44px;
+    @include size(44, 44);
 }
 .workers-soc-link{
     width: 100%;
@@ -83,8 +73,7 @@
     }
 }
 .workers-soc-icons{
-    height: 20px;
-    width: 20px;
+    @include size(20, 20);
     fill: #AFB1B8;
     transition: color 250ms linear;
 }

@@ -23,11 +23,7 @@
 .portfolio-categories{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
     cursor: pointer;
     padding: 6px 22px;
@@ -44,6 +40,7 @@
         color: #FFFFFF;
         background-color: var(--btns-links-color)
     } 
+    @include font(500, 16, 26, 0.03)
 }
 .header-portfolio-border{
     border-bottom: 1px solid #ECECEC;;
