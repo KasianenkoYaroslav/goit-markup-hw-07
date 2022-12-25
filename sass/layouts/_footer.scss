@@ -1,4 +1,4 @@
-.container-footer{
+.footer__container{
     display: flex;
     justify-content: start;
     padding-left: 15px;
@@ -6,31 +6,31 @@
     margin: 0 auto;
     width: 1200px;
 }
-.section-adress{
+.adress__section{
     margin-right: 70px;
 }
-.section-social{
+.social__section{
     margin-top: 12px;
 }
-.footer-background{
+.footer__background{
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--section-background-color)
 }
-.list-footer{
+.footer__list{
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0; 
 }
-.link-footer-adress{
+.adress__section__link{
     margin-top: 28px;
     margin-bottom: 12px;
 }
-.link-footer{
+.adress__section__link__contacts{
     margin-bottom: 12px;
 }
-.logo-footer{
+.footer__logo{
     font-family: 'Raleway';
     @include font(700, 26, 1.19, 0.03);
     font-style: normal;
@@ -39,7 +39,7 @@
     text-decoration: none;
     margin-right: auto;
 }
-.logo-footer-part{
+.footer__logo__part{
     font-family: 'Raleway';
     @include font(700, 26, 31px, 0.03);
     font-style: normal;
@@ -57,11 +57,11 @@
     margin-bottom: 12px;
     margin-left: auto;
 }
-.social-footer{
-    @extend %flex-align;
-    justify-content: center;
+.social__section{
+    margin-top: 12px;
+    margin-bottom: 20px;
 }
-.invitation-footer{
+.invitation{
     font-family: 'Roboto';
     font-style: normal;
     @include font(700, 14, 16px, 0.03);
@@ -70,15 +70,16 @@
     @extend %flex-align;
     margin-bottom: 20px;
 }
-.footer-soc-list{
+.invitation__soc__list{
     @extend %flex-align;
     gap: 10px;
 }
-.footer-soc-items{
+.invitation__soc__items{
     @include size(44, 44);
 }
-.footer-soc-link{
-    @include size(100%, 100%);
+.invitation__soc__link{
+    width: 100%;
+    height: 100%;
     @extend %flex-align;
     justify-content: center;
     border-radius: 50%;
@@ -90,27 +91,27 @@
     &:focus{
         background-color: var(--btns-links-color);
     }
-    &:hover .workers-soc-icons{
+    &:hover .invitation__soc__icons{
         fill: #FFFFFF;
     }
-    &:focus .workers-soc-icons{
+    &:focus .invitation__soc__icons{
         fill: #FFFFFF;
     }
 }
-.footer-soc-icons{
+.invitation__soc__icons{
     @include size(20, 20);
     fill: #FFFFFF
 }
-.subscriber-form{
+.subscriber__form{
     margin-top: 12px;
     margin-bottom: 20px;
     margin-left: 70px;
 }
-.subscriber-form-bottom{
+.subscriber__form__bottom{
     display: flex;
     align-items: baseline;
 }
-.text-form{
+.text__form{
     font-family: 'Roboto';
     font-style: normal;
     @include font(700, 14, 16px, 0.03);
@@ -119,7 +120,7 @@
     @extend %flex-align;
     margin-bottom: 20px;
 }
-.input-bottom{
+.input__bottom{
     @include size(358, 50);
     @include font(16, 1.25);
     padding-left: 16px;
@@ -137,10 +138,10 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 }
-.input::placeholder.input-bottom{
+.input::placeholder.input__bottom{
     color: rgba(255, 255, 255, 0.6);
 }
-.submit-bottom{
+.submit__bottom{
     @extend %flex-align;
     @include font(600, 16, 1.88, 0.06);
     @include size(200, 50);
@@ -157,13 +158,13 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }
-.submit-icon{
+.submit__icon{
     @include size(24, 24);
     top: 13px;
     margin-left: 10px;
     fill: #FFFFFF;
 }
-.contacts-footer{
+.footer__contacts{
     font-family: 'Roboto';
     font-style: normal;
     @include font(400, 14, 24px, 0.03);

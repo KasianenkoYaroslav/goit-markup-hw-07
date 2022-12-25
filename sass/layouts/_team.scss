@@ -1,13 +1,13 @@
-.section-background-workers{
+.section__background__workers{
     background: #F5F4FA;
 }
-.container-team{
+.team__container{
     width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
 }
-.list-team{
+.team__list{
     text-decoration: none;
     @extend %flex-align;
     justify-content: space-between;
@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
 }
-.team-workers{
+.team__workers{
     padding-top: 30px;
     padding-bottom: 30px;
     background: #FFFFFF;
@@ -28,19 +28,19 @@
     color: #212121;
     margin-bottom: 50px;
 }
-.name{
+.team__workers__name{
     @include font(500, 16, 1.1875, 0.03);
     text-align: center;
     padding-bottom: 10px;
     color: var(--article-color)
 }
-.position{
+.team__workers__position{
     @include font(400, 16, 1.1875, 0.03);
     text-align: center;
     margin-bottom: 16px;
     color: var(--article-descr-color)
 }
-.workers-soc-list{
+.team__workers__soc__list{
     text-decoration: none;
     list-style: none;
     margin: 0;
@@ -49,10 +49,10 @@
     justify-content: center;
     gap: 10px;
 }
-.workers-soc-items{
+.team__workers__soc__items{
     @include size(44, 44);
 }
-.workers-soc-link{
+.team__workers__soc__link{
     width: 100%;
     height: 100%;
     @extend %flex-align;
@@ -62,17 +62,17 @@
     &:hover{
         background-color: var(--btns-links-color);
     }
-    &:hover .workers-soc-icons{
+    &:hover .team__workers__soc__icons{
         fill: #FFFFFF;
     }
     &:focus{
         background-color: var(--btns-links-color);
     }
-    &:focus .workers-soc-icons{
+    &:focus .team__workers__soc__icons{
         fill: #FFFFFF;
     }
 }
-.workers-soc-icons{
+.team__workers__soc__icons{
     @include size(20, 20);
     fill: #AFB1B8;
     transition: color 250ms linear;
