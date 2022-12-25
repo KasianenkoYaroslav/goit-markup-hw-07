@@ -48,7 +48,7 @@ body {
   --btns-links-color:#2196F3;
 }
 
-.list-portfolio-categories, .portfolio-section, .modal-politic-label, .modal-close, .submit-bottom, .text-form, .footer-soc-link, .footer-soc-list, .invitation-footer, .social-footer, .clients-link, .clients-list, .workers-soc-link, .workers-soc-list, .list-team, .list-occupation, .advantages, .advantage-bcgrd, .list-advantages, .btn-order, .hero, .header-contacts-link, .list-contacts, .menu, .list-menu, .navigation, .logo-header, .logo, .list-header, .container-header {
+.list-portfolio-categories, .portfolio-section, .modal-politic-label, .modal-close, .submit-bottom, .text-form, .footer-soc-link, .footer-soc-list, .invitation-footer, .social-footer, .clients-link, .clients-list, .workers-soc-link, .workers-soc-list, .list-team, .list-occupation, .advantages, .advantages__bcgrd, .advantages__list, .hero__btn, .hero, .header__contacts__link, .contacts, .navigation__menu, .navigation__menu__list, .navigation, .logo-header, .logo, .navigation__list, .container-header {
   display: flex;
   align-items: center;
 }
@@ -62,7 +62,7 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 
-.list-header {
+.navigation__list {
   text-decoration: none;
   list-style: none;
   margin: 0;
@@ -92,7 +92,7 @@ body {
   transition: color 250ms linear;
 }
 
-.list-menu {
+.navigation__menu__list {
   text-decoration: none;
   list-style: none;
   margin: 0;
@@ -102,7 +102,7 @@ body {
   transition: color 250ms linear;
 }
 
-.menu {
+.navigation__menu {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -114,7 +114,7 @@ body {
   transition: color 250ms linear;
   position: relative;
 }
-.menu.active::after {
+.navigation__menu.active::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -125,17 +125,17 @@ body {
   left: 0;
   border-radius: 2px;
 }
-.menu:hover {
+.navigation__menu:hover {
   color: var(--btns-links-color);
 }
-.menu:active {
+.navigation__menu:active {
   color: var(--btns-links-color);
 }
-.menu:focus {
+.navigation__menu:focus {
   color: var(--btns-links-color);
 }
 
-.list-contacts {
+.contacts {
   text-decoration: none;
   list-style: none;
   margin: 0;
@@ -143,7 +143,7 @@ body {
   margin-left: auto;
 }
 
-.header-contacts-link {
+.header__contacts__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -160,22 +160,22 @@ body {
   color: #757575;
   transition: color 250ms linear;
 }
-.header-contacts-link:hover {
+.header__contacts__link:hover {
   fill: var(--btns-links-color);
   color: var(--btns-links-color);
 }
-.header-contacts-link:focus {
+.header__contacts__link:focus {
   fill: var(--btns-links-color);
   color: var(--btns-links-color);
 }
 
-.header-contacts-icons {
+.header__contacts__icons {
   margin-right: 10px;
   color: #757575;
   transition: fill 250ms linear;
 }
 
-.hero-section {
+.section__hero {
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-image.jpg);
@@ -185,7 +185,7 @@ body {
   background-color: var(--section-background-color);
 }
 
-.hero-container {
+.container__hero {
   width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -208,7 +208,7 @@ body {
   background-color: transparent;
 }
 
-.btn-order {
+.hero__btn {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -225,18 +225,18 @@ body {
   background: var(--btns-links-color);
 }
 
-.section-advantages {
+.section__advantages {
   padding-top: 94px;
 }
 
-.container-advantages {
+.container__advantages {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.list-advantages {
+.advantages__list {
   text-decoration: none;
   list-style: none;
   margin: 0;
@@ -245,7 +245,7 @@ body {
   gap: 30px;
 }
 
-.advantage-bcgrd {
+.advantages__bcgrd {
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
@@ -254,7 +254,7 @@ body {
   justify-content: center;
 }
 
-.advantage-icon {
+.advantage__icon {
   width: 70px;
   height: 70px;
 }
@@ -270,7 +270,7 @@ body {
   color: var(--article-color);
 }
 
-.advantages-descr {
+.advantages__descr {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
