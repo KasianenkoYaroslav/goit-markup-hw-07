@@ -48,26 +48,18 @@ body {
   --btns-links-color:#2196F3;
 }
 
-.submit-bottom, .text-form, .footer-soc-link, .footer-soc-list, .invitation-footer, .social-footer, .list-portfolio-categories, .portfolio-section, .modal-politic-label, .modal-close, .submit__bottom, .text__form, .invitation__soc__link, .invitation__soc__list, .invitation, .clients__list__link, .clients__list, .team__workers__soc__link, .team__workers__soc__list, .team__list, .occupation__list, .advantages, .advantages__bcgrd, .advantages__list, .hero__btn, .hero, .header__contacts__link, .contacts, .navigation__menu, .navigation__menu__list, .navigation, .logo-header, .logo, .navigation__list, .container-header {
+.submit-bottom, .text-form, .footer-soc-link, .footer-soc-list, .invitation-footer, .social-footer, .list-portfolio-categories, .portfolio-section, .modal-politic-label, .modal-close, .submit__bottom, .text__form, .invitation__soc__link, .invitation__soc__list, .invitation, .clients__list__link, .clients__list, .team__workers__soc__link, .team__workers__soc__list, .team__list, .occupation__list, .advantages__title, .advantages__bcgrd, .advantages__list, .hero__btn, .hero, .contacts__link, .contacts, .navigation__link, .navigation__list, .navigation, .logo-header, .logo, .header {
   display: flex;
   align-items: center;
 }
 
-.container-header {
+.header {
   width: 1200px;
   margin: 0 auto;
 }
 
-.header-border-bottom {
+.header__border {
   border-bottom: 1px solid #ECECEC;
-}
-
-.navigation__list {
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 50px;
 }
 
 .logo {
@@ -92,7 +84,7 @@ body {
   transition: color 250ms linear;
 }
 
-.navigation__menu__list {
+.navigation__list {
   text-decoration: none;
   list-style: none;
   margin: 0;
@@ -102,7 +94,7 @@ body {
   transition: color 250ms linear;
 }
 
-.navigation__menu {
+.navigation__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -114,7 +106,7 @@ body {
   transition: color 250ms linear;
   position: relative;
 }
-.navigation__menu.active::after {
+.navigation__link.active::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -125,13 +117,13 @@ body {
   left: 0;
   border-radius: 2px;
 }
-.navigation__menu:hover {
+.navigation__link:hover {
   color: var(--btns-links-color);
 }
-.navigation__menu:active {
+.navigation__link:active {
   color: var(--btns-links-color);
 }
-.navigation__menu:focus {
+.navigation__link:focus {
   color: var(--btns-links-color);
 }
 
@@ -143,7 +135,7 @@ body {
   margin-left: auto;
 }
 
-.header__contacts__link {
+.contacts__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -160,16 +152,16 @@ body {
   color: #757575;
   transition: color 250ms linear;
 }
-.header__contacts__link:hover {
+.contacts__link:hover {
   fill: var(--btns-links-color);
   color: var(--btns-links-color);
 }
-.header__contacts__link:focus {
+.contacts__link:focus {
   fill: var(--btns-links-color);
   color: var(--btns-links-color);
 }
 
-.header__contacts__icons {
+.contacts__icons {
   margin-right: 10px;
   color: #757575;
   transition: fill 250ms linear;
@@ -225,11 +217,11 @@ body {
   background: var(--btns-links-color);
 }
 
-.section__advantages {
+.advantages {
   padding-top: 94px;
 }
 
-.container__advantages {
+.advantages__container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -254,12 +246,12 @@ body {
   justify-content: center;
 }
 
-.advantage__icon {
+.advantages__icons {
   width: 70px;
   height: 70px;
 }
 
-.advantages {
+.advantages__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -332,7 +324,7 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.section__background__workers {
+.section__background {
   background: #F5F4FA;
 }
 
