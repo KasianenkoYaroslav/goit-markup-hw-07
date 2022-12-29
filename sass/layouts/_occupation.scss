@@ -1,4 +1,4 @@
-.occupation__container{
+.occupation{
     width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -12,7 +12,7 @@
     @extend %flex-align;
     gap: 30px;
 }
-.occupation{
+.occupation__title{
     @include font(700, 36, 1.16, 0.03);
     text-align: center;
     margin-bottom: 50px;

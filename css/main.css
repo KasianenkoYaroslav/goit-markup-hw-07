@@ -274,7 +274,7 @@ body {
   color: var(--article-descr-color);
 }
 
-.occupation__container {
+.occupation {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -289,7 +289,7 @@ body {
   gap: 30px;
 }
 
-.occupation {
+.occupation__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -328,7 +328,7 @@ body {
   background: #F5F4FA;
 }
 
-.team__container {
+.team {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -351,7 +351,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
