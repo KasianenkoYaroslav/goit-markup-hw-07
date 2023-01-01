@@ -1,4 +1,9 @@
-.container-footer{
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--section-background-color);
+}
+.footer__container{
     display: flex;
     justify-content: start;
     padding-left: 15px;
@@ -6,48 +11,56 @@
     margin: 0 auto;
     width: 1200px;
 }
-.section-adress{
-    margin-right: 70px;
-}
-.section-social{
-    margin-top: 12px;
-}
-.footer-background{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: var(--section-background-color)
-}
-.list-footer{
+.adress__list{
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0; 
 }
-.link-footer-adress{
-    margin-top: 28px;
-    margin-bottom: 12px;
-}
-.link-footer{
-    margin-bottom: 12px;
-}
-.logo-footer{
+.footer__logo{
     font-family: 'Raleway';
-    font-style: normal;
     @include font(700, 26, 1.19, 0.03);
+    font-style: normal;
     color: #2196F3;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     margin-right: auto;
 }
-.logo-footer-part{
+.footer__logo__part{
     font-family: 'Raleway';
-    font-style: normal;
     @include font(700, 26, 31px, 0.03);
+    font-style: normal;
     margin-left: auto;
-    margin-bottom: 28px;
     color: #FFFFFF;
 }
+.footer__contacts{
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(400, 14, 24px, 0.03);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 250ms linear; 
+    &:hover{
+        color: #2196F3;
+    }
+    &:focus{
+        color: #2196F3;
+    }
+    &:active{
+        color: #2196F3;
+    }
+}
 .adress{
+    margin-right: 70px;
+}
+.adress__link{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+.adress__contacts{
+    margin-bottom: 12px;
+}
+.adress__item{
     font-family: 'Roboto';
     font-style: normal;
     @include font(400, 14, 1.71, 0.03);
@@ -57,11 +70,11 @@
     margin-bottom: 12px;
     margin-left: auto;
 }
-.social-footer{
-    @extend %flex-align;
-    justify-content: center;
+.social{
+    margin-top: 12px;
+    margin-bottom: 20px;
 }
-.invitation-footer{
+.invitation{
     font-family: 'Roboto';
     font-style: normal;
     @include font(700, 14, 16px, 0.03);
@@ -70,14 +83,18 @@
     @extend %flex-align;
     margin-bottom: 20px;
 }
-.footer-soc-list{
+.invitation__list{
     @extend %flex-align;
     gap: 10px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.footer-soc-items{
+.invitation__items{
     @include size(44, 44);
 }
-.footer-soc-link{
+.invitation__link{
     width: 100%;
     height: 100%;
     @extend %flex-align;
@@ -91,14 +108,14 @@
     &:focus{
         background-color: var(--btns-links-color);
     }
-    &:hover .workers-soc-icons{
+    &:hover .invitation__icons{
         fill: #FFFFFF;
     }
-    &:focus .workers-soc-icons{
+    &:focus .invitation__icons{
         fill: #FFFFFF;
     }
 }
-.footer-soc-icons{
+.invitation__icons{
     @include size(20, 20);
     fill: #FFFFFF
 }
