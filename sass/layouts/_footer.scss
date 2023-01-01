@@ -1,3 +1,8 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--section-background-color);
+}
 .footer__container{
     display: flex;
     justify-content: start;
@@ -6,29 +11,11 @@
     margin: 0 auto;
     width: 1200px;
 }
-.adress__section{
-    margin-right: 70px;
-}
-.social__section{
-    margin-top: 12px;
-}
-.footer__background{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: var(--section-background-color)
-}
-.footer__list{
+.adress__list{
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0; 
-}
-.adress__section__link{
-    margin-top: 28px;
-    margin-bottom: 12px;
-}
-.adress__section__link__contacts{
-    margin-bottom: 12px;
 }
 .footer__logo{
     font-family: 'Raleway';
@@ -47,7 +34,34 @@
     margin-bottom: 28px;
     color: #FFFFFF;
 }
+.footer__contacts{
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(400, 14, 24px, 0.03);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 250ms linear; 
+    &:hover{
+        color: #2196F3;
+    }
+    &:focus{
+        color: #2196F3;
+    }
+    &:active{
+        color: #2196F3;
+    }
+}
 .adress{
+    margin-right: 70px;
+}
+.adress__link{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+.adress__contacts{
+    margin-bottom: 12px;
+}
+.adress__item{
     font-family: 'Roboto';
     font-style: normal;
     @include font(400, 14, 1.71, 0.03);
@@ -56,6 +70,9 @@
     margin-top: 28px;
     margin-bottom: 12px;
     margin-left: auto;
+}
+.social__section{
+    margin-top: 12px;
 }
 .social__section{
     margin-top: 12px;
@@ -73,6 +90,10 @@
 .invitation__soc__list{
     @extend %flex-align;
     gap: 10px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .invitation__soc__items{
     @include size(44, 44);
@@ -164,20 +185,4 @@
     margin-left: 10px;
     fill: #FFFFFF;
 }
-.footer__contacts{
-    font-family: 'Roboto';
-    font-style: normal;
-    @include font(400, 14, 24px, 0.03);
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    transition: color 250ms linear; 
-    &:hover{
-        color: #2196F3;
-    }
-    &:focus{
-        color: #2196F3;
-    }
-    &:active{
-        color: #2196F3;
-    }
-}
+
