@@ -1,4 +1,4 @@
-.clients__container{
+.clients{
     width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -13,7 +13,7 @@
     justify-content: center;
     gap: 30px;  
 }
-.clients{
+.clients__title{
     font-family: 'Roboto';
     font-style: normal;
     @include font(700, 36, 42px, 0.03);
@@ -21,7 +21,7 @@
     color: #212121; 
     margin-bottom: 50px;
 }
-.clients__list__link{
+.clients__link{
     @extend %flex-align;
     justify-content: center;
     border: 1px solid #AFB1B8;
@@ -37,7 +37,7 @@
         border-color:var(--btns-links-color);
     }
 }
-.clients_list__icons{
+.clients__icons{
     @include size(106, 60);
     margin: 16px 32px 16px 32px;
 }

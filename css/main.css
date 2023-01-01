@@ -48,7 +48,7 @@ body {
   --btns-links-color:#2196F3;
 }
 
-.submit-bottom, .text-form, .footer-soc-link, .footer-soc-list, .invitation-footer, .social-footer, .list-portfolio-categories, .portfolio-section, .modal-politic-label, .modal-close, .submit__bottom, .text__form, .invitation__soc__link, .invitation__soc__list, .invitation, .clients__list__link, .clients__list, .team__workers__soc__link, .team__workers__soc__list, .team__list, .occupation__list, .advantages__title, .advantages__bcgrd, .advantages__list, .hero__btn, .hero, .contacts__link, .contacts, .navigation__link, .navigation__list, .navigation, .logo-header, .logo, .header {
+.submit-bottom, .text-form, .footer-soc-link, .footer-soc-list, .invitation-footer, .social-footer, .list-portfolio-categories, .portfolio-section, .modal-politic-label, .modal-close, .submit__bottom, .text__form, .invitation__soc__link, .invitation__soc__list, .invitation, .clients__link, .clients__list, .team__workers__soc__link, .team__workers__soc__list, .team__list, .occupation__list, .advantages__title, .advantages__bcgrd, .advantages__list, .hero__btn, .hero, .contacts__link, .contacts, .navigation__link, .navigation__list, .navigation, .logo-header, .logo, .header {
   display: flex;
   align-items: center;
 }
@@ -422,7 +422,7 @@ body {
   transition: color 250ms linear;
 }
 
-.clients__container {
+.clients {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -438,7 +438,7 @@ body {
   gap: 30px;
 }
 
-.clients {
+.clients__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -450,23 +450,23 @@ body {
   margin-bottom: 50px;
 }
 
-.clients__list__link {
+.clients__link {
   justify-content: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
   transition: fill 250ms linear, border-color 250ms linear;
 }
-.clients__list__link:hover {
+.clients__link:hover {
   fill: var(--btns-links-color);
   border-color: var(--btns-links-color);
 }
-.clients__list__link:focus {
+.clients__link:focus {
   fill: var(--btns-links-color);
   border-color: var(--btns-links-color);
 }
 
-.clients_list__icons {
+.clients__icons {
   width: 106px;
   height: 60px;
   margin: 16px 32px 16px 32px;
