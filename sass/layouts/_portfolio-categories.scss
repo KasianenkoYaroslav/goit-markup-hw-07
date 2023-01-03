@@ -1,11 +1,11 @@
-.portfolio-section{
+.categories{
     width: 1200px;
     margin: 0 auto; 
     padding-left: 15px;
     padding-right: 15px;
     @extend %flex-align;
 }
-.list-portfolio-categories{
+.categories__list{
     text-decoration: none;
     list-style: none;
     margin: 0;
@@ -13,14 +13,10 @@
     @extend %flex-align;
     justify-content: center;
     margin-bottom: 50px;
+    padding-top: 94px;
     gap: 8px;
 }
-.portfolio-filter{
-    border: 1px solid #EEEEEE;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.portfolio-categories{
+.categories__btn{
     font-family: 'Roboto';
     font-style: normal;
     text-align: center;
@@ -40,8 +36,5 @@
         color: #FFFFFF;
         background-color: var(--btns-links-color)
     } 
-    @include font(500, 16, 26, 0.03)
-}
-.header-portfolio-border{
-    border-bottom: 1px solid #ECECEC;;
+    @include font(500, 16, 26px, 0.03)
 }

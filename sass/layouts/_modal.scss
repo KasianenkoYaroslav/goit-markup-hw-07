@@ -22,7 +22,7 @@
     border-radius: 5px;
     transition: transform 250ms linear;
 }
-.modal-close{
+.modal__close{
     @include size(30, 30);
     background-color: transparent;
     border-radius: 50%;
@@ -35,13 +35,13 @@
     justify-content: center;
     position: absolute;
 }
-.modal-cross:hover{
+.modal__cross:hover{
     fill: var(--btns-links-color);
 }
-.modal-cross:focus{
+.modal__cross:focus{
     fill: var(--btns-links-color);
 }
-.modal-cross:active{
+.modal__cross:active{
     fill: var(--btns-links-color);
 }
 .is-hidden{
@@ -49,10 +49,10 @@
     visibility: hidden;
     pointer-events: none;
 }
-.modal-form{
+.modal__form{
     padding: 40px;
 }
-.modal-heading{
+.modal__heading{
     font-family: 'Roboto';
     font-style: normal;
     @include font(700, 20, 23px, 0.03);
@@ -73,7 +73,7 @@
     @include font(400, 12, 14px, 0.01);
     color: #757575;
 }
-.modal-input{
+.modal__input{
     display: inline-block;
     width: 100%;
     height: 40px;
@@ -90,16 +90,16 @@
     &:hover{
         border: 1px solid var(--btns-links-color);
     }
-    &:focus~.modal-form-icons{
+    &:focus~.modal__icons{
         color: var(--btns-links-color);
         fill: var(--btns-links-color);
     }
-    &:hover~.modal-form-icons{
+    &:hover~.modal__icons{
         color: var(--btns-links-color);
         fill: var(--btns-links-color);
     }
 }
-.modal-form-icons{
+.modal__icons{
     position: absolute;
     @include size(15, 12);
     left: 10px;
@@ -157,7 +157,7 @@
     margin-left: 10px;
     cursor: pointer; 
 }
-.modal-form-icon-check{
+.icon-check{
     @include size(15, 12);
     top: 55%;
     transition: color 250ms linear, fill 250ms linear;

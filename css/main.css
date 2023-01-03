@@ -48,7 +48,7 @@ body {
   --btns-links-color:#2196F3;
 }
 
-.submit-bottom, .text-form, .list-portfolio-categories, .portfolio-section, .modal-politic-label, .modal-close, .submit__bottom, .text__form, .invitation__link, .invitation__list, .invitation, .clients__link, .clients__list, .team__workers__soc__link, .team__workers__soc__list, .team__list, .occupation__list, .advantages__title, .advantages__bcgrd, .advantages__list, .hero__btn, .hero, .contacts__link, .contacts, .navigation__link, .navigation__list, .navigation, .logo-header, .logo, .header {
+.categories__list, .categories, .portfolio__section, .modal-politic-label, .modal__close, .submit__bottom, .text__form, .invitation__link, .invitation__list, .invitation, .clients__link, .clients__list, .team__workers__soc__link, .team__workers__soc__list, .team__list, .occupation__list, .advantages__title, .advantages__bcgrd, .advantages__list, .hero__btn, .hero, .contacts__link, .contacts, .navigation__link, .navigation__list, .navigation, .logo-header, .logo, .header {
   display: flex;
   align-items: center;
 }
@@ -734,7 +734,7 @@ body {
   transition: transform 250ms linear;
 }
 
-.modal-close {
+.modal__close {
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -748,15 +748,15 @@ body {
   position: absolute;
 }
 
-.modal-cross:hover {
+.modal__cross:hover {
   fill: var(--btns-links-color);
 }
 
-.modal-cross:focus {
+.modal__cross:focus {
   fill: var(--btns-links-color);
 }
 
-.modal-cross:active {
+.modal__cross:active {
   fill: var(--btns-links-color);
 }
 
@@ -766,11 +766,11 @@ body {
   pointer-events: none;
 }
 
-.modal-form {
+.modal__form {
   padding: 40px;
 }
 
-.modal-heading {
+.modal__heading {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -800,7 +800,7 @@ body {
   color: #757575;
 }
 
-.modal-input {
+.modal__input {
   display: inline-block;
   width: 100%;
   height: 40px;
@@ -812,22 +812,22 @@ body {
   cursor: pointer;
   transition: color 250ms linear, fill 250ms linear;
 }
-.modal-input:focus {
+.modal__input:focus {
   border: 1px solid var(--btns-links-color);
 }
-.modal-input:hover {
+.modal__input:hover {
   border: 1px solid var(--btns-links-color);
 }
-.modal-input:focus ~ .modal-form-icons {
+.modal__input:focus ~ .modal__icons {
   color: var(--btns-links-color);
   fill: var(--btns-links-color);
 }
-.modal-input:hover ~ .modal-form-icons {
+.modal__input:hover ~ .modal__icons {
   color: var(--btns-links-color);
   fill: var(--btns-links-color);
 }
 
-.modal-form-icons {
+.modal__icons {
   position: absolute;
   width: 15px;
   height: 12px;
@@ -894,17 +894,17 @@ body {
   cursor: pointer;
 }
 
-.modal-form-icon-check {
+.icon-check {
   width: 15px;
   height: 12px;
   top: 55%;
   transition: color 250ms linear, fill 250ms linear;
 }
-.modal-form-icon-check:checked + label > div {
+.icon-check:checked + label > div {
   border: none;
   background-color: var(--btns-links-color);
 }
-.modal-form-icon-check:checked + label > div svg {
+.icon-check:checked + label > div svg {
   fill: #FFFFFF;
 }
 
@@ -969,41 +969,36 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.container-portfolio {
+.portfolio__section {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.portfolio-container-header {
+.portfolio {
   border-bottom: 1px solid #EEEEEE;
 }
 
-.portfolio-section {
+.categories {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.list-portfolio-categories {
+.categories__list {
   text-decoration: none;
   list-style: none;
   margin: 0;
   padding: 0;
   justify-content: center;
   margin-bottom: 50px;
+  padding-top: 94px;
   gap: 8px;
 }
 
-.portfolio-filter {
-  border: 1px solid #EEEEEE;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.portfolio-categories {
+.categories__btn {
   font-family: "Roboto";
   font-style: normal;
   text-align: center;
@@ -1013,24 +1008,20 @@ body {
   transition: background-color 250ms linear, color 250ms linear, border-bottom 250ms linear;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26;
+  line-height: 26px;
   letter-spacing: 0.03em;
 }
-.portfolio-categories:hover {
+.categories__btn:hover {
   color: #FFFFFF;
   background-color: var(--btns-links-color);
 }
-.portfolio-categories:focus {
+.categories__btn:focus {
   color: #FFFFFF;
   background-color: var(--btns-links-color);
 }
-.portfolio-categories:active {
+.categories__btn:active {
   color: #FFFFFF;
   background-color: var(--btns-links-color);
-}
-
-.header-portfolio-border {
-  border-bottom: 1px solid #ECECEC;
 }
 
 .container-projects {
@@ -1040,17 +1031,18 @@ body {
   padding-right: 15px;
 }
 
-.list-portfolio-projects {
+.projects {
   text-decoration: none;
   list-style: none;
   margin: 0;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
+  padding-bottom: 94px;
   gap: 30px;
 }
 
-.project {
+.projects__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1061,20 +1053,20 @@ body {
   color: var(--article-color);
 }
 
-.project-item {
+.projects__item {
   flex-basis: calc((100% - 60px) / 3);
   transition: box-shadow 250ms linear;
   transform: translateY(0%);
 }
-.project-item:hover {
+.projects__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-item:hover .project-descr-overlay {
+.projects__item:hover .projects__descr {
   transform: translateY(0%);
   transition: 250ms linear;
 }
 
-.project-descr-overlay {
+.projects__descr {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1091,12 +1083,12 @@ body {
   background-color: var(--btns-links-color);
 }
 
-.project-item-thumb {
+.projects__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-categories-item {
+.categories__item {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
@@ -1104,6 +1096,12 @@ body {
   margin-left: 24px;
   margin-right: 24px;
   color: var(--article-descr-color);
+}
+
+.projects__filter {
+  border: 1px solid #EEEEEE;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer {
@@ -1257,18 +1255,18 @@ body {
   fill: #FFFFFF;
 }
 
-.subscriber-form {
+.subscriber__form {
   margin-top: 12px;
   margin-bottom: 20px;
   margin-left: 70px;
 }
 
-.subscriber-form-bottom {
+.subscriber__form__bottom {
   display: flex;
   align-items: baseline;
 }
 
-.text-form {
+.text__form {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -1280,14 +1278,16 @@ body {
   margin-bottom: 20px;
 }
 
-.input-bottom {
+.input__bottom {
   width: 358px;
   height: 50px;
-  padding-left: 16px;
   font-weight: 16;
   font-size: 1.25px;
   line-height: 26;
   letter-spacing: 0.03em;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1296,23 +1296,23 @@ body {
   background-color: var(--fon-hero-color);
   color: rgba(255, 255, 255, 0.6);
 }
-.input-bottom:focus, .input-bottom:hover {
+.input__bottom:focus, .input__bottom:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.input::-moz-placeholder.input-bottom {
+.input::-moz-placeholder.input__bottom {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.input:-ms-input-placeholder.input-bottom {
+.input:-ms-input-placeholder.input__bottom {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.input::placeholder.input-bottom {
+.input::placeholder.input__bottom {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.submit-bottom {
+.submit__bottom {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.88;
@@ -1328,39 +1328,14 @@ body {
   border: none;
   border-radius: 4px;
 }
-.submit-bottom:focus, .submit-bottom:hover {
+.submit__bottom:focus, .submit__bottom:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.submit-icon {
-  top: 13px;
-  margin-left: 10px;
+.submit__icon {
   width: 24px;
   height: 24px;
+  top: 13px;
+  margin-left: 10px;
   fill: #FFFFFF;
-}
-
-.contacts-footer {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  transition: color 250ms linear;
-}
-.contacts-footer:hover {
-  color: #2196F3;
-}
-.contacts-footer:focus {
-  color: #2196F3;
-}
-.contacts-footer:active {
-  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */

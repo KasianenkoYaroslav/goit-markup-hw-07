@@ -119,16 +119,16 @@
     @include size(20, 20);
     fill: #FFFFFF
 }
-.subscriber-form{
+.subscriber__form{
     margin-top: 12px;
     margin-bottom: 20px;
     margin-left: 70px;
 }
-.subscriber-form-bottom{
+.subscriber__form__bottom{
     display: flex;
     align-items: baseline;
 }
-.text-form{
+.text__form{
     font-family: 'Roboto';
     font-style: normal;
     @include font(700, 14, 16px, 0.03);
@@ -137,10 +137,12 @@
     @extend %flex-align;
     margin-bottom: 20px;
 }
-.input-bottom{
+.input__bottom{
     @include size(358, 50);
-    padding-left: 16px;
     @include font(16, 1.25);
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -153,10 +155,10 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 }
-.input::placeholder.input-bottom{
+.input::placeholder.input__bottom{
     color: rgba(255, 255, 255, 0.6);
 }
-.submit-bottom{
+.submit__bottom{
     @extend %flex-align;
     @include font(600, 16, 1.88, 0.06);
     @include size(200, 50);
@@ -173,30 +175,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }
-.submit-icon{
+.submit__icon{
+    @include size(24, 24);
     top: 13px;
     margin-left: 10px;
-    @include size(24, 24);
     fill: #FFFFFF;
 }
-.contacts-footer{
-    font-family: 'Roboto';
-    font-style: normal;
-    @include font(400, 14, 24px, 0.03);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    transition: color 250ms linear; 
-    &:hover{
-        color: #2196F3;
-    }
-    &:focus{
-        color: #2196F3;
-    }
-    &:active{
-        color: #2196F3;
-    }
-}
+
